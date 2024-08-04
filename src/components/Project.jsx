@@ -9,51 +9,54 @@ export default function Project() {
         });
     };
 
+    const projects = [
+        {
+            imgSrc: projectOne,
+            altText: "Project",
+            date: "july 2024",
+            title: "bizarrebeam's book corner",
+            description: "A collection of books I have read, with my own summaries and highlights. This project is a practice in using Node.js, EJS templating, connecting to the Open Library API, and PostgreSQL.",
+            buttons: [
+                { text: "GitHub", link: "#", bgColor: "bg-orange", hoverColor: "hover:bg-orange-hover" },
+                { text: "Visit it!", link: "#", bgColor: "bg-orange", hoverColor: "hover:bg-orange-hover" }
+            ]
+        }
+    ];
+
     return (
         <>
-            <div className="font-fira-code text-[#343235] text-[15px] w-full max-w-[588px] mx-auto">
+            <div className="font-fira-code text-black w-full max-w-[588px] mx-auto">
+                <h1 className="sm:text-3xl s:text-2xl xs:text-xl font-bold sm:mb-4 s:mb-3 xs:mb-2">{'< project / >'}</h1>
 
-                <h2 className="text-2xl font-bold mb-4">{'< project / >'}</h2>
+                {projects.map((project, index) => (
+                    <div key={index} className="sm:text-sm s:text-xs xs:text-xxs sm:rounded-3xl s:rounded-2xl xs:rounded-xl sm:border-2 s:border-1 xs:border border-black bg-white overflow-hidden">
+                        <img src={project.imgSrc} alt={project.altText} className="w-full border-b-2 border-black sm:rounded-3xl s:rounded-2xl xs:rounded-xl" />
 
-                <div className="font-fira-code text-[#343235] text-[15px] w-full max-w-[588px] rounded-[24px] border-2 border-[#343235] bg-white overflow-hidden">
-                    <img src={projectOne} alt="Project" className="w-full border-b-2 border-[#343235] rounded-[24px]" />
+                        <div className="sm:p-8 s:p-7 xs:p-6">
+                            <p className="text-gray-text font-bold sm:text-sm s:text-xs xs:text-xxs">{project.date}</p>
+                            <h1 className="sm:text-2xl s:text-xl xs:text-lg font-bold sm:mt-2 s:mt-1 xs:mt-0 sm:mb-4 s:mb-3 xs:mb-2 sm:leading-sm s:leading-s xs:leading-xs">{project.title}</h1>
+                            <p className="text-justify sm:mb-4 s:mb-3 xs:mb-2 sm:leading-sm s:leading-s xs:leading-xs">{project.description}</p>
 
-                    <div className="p-8">
-                        <p className="text-[#898989] font-bold">july 2024 (continuously updating)</p>
-                        <h2 className="text-[30px] text-[#343235] font-bold mt-4 mb-4">bizarrebeam&apos;s book corner</h2>
-                        <p className="text-[#343235] text-justify mb-4" style={{ lineHeight: '1.75' }}>
-                            A collection of books I have read, with my own summaries and highlights. This project is a practice in using Node.js, EJS templating, connecting to the Open Library API, and PostgreSQL.
-                        </p>
-
-                        <div className="flex justify-end gap-4 mt-6">
-                            <button className="px-4 py-2 border-2 border-[#343235] rounded-full bg-[#FFC593] text-[#343235] font-bold hover:bg-[#FEB26D] transition ease-in-out duration-300">
-                                GitHub
-                            </button>
-                            <button className="px-4 py-2 border-2 border-[#343235] rounded-full bg-[#FFC593] text-[#343235] font-bold hover:bg-[#FEB26D] transition ease-in-out duration-300">
-                                Visit it!
-                            </button>
+                            <div className="flex justify-end sm:gap-4 s:gap-3 xs:gap-2 sm:mt-6 s:mt-5 xs:mt-4">
+                                {project.buttons.map((button, btnIndex) => (
+                                    <button key={btnIndex} className={`sm:px-4 sm:py-2 s:px-3 s:py-1 xs:px-2 xs:py-1 sm:border-2 s:border-1 xs:border border-black rounded-full ${button.bgColor} font-bold ${button.hoverColor} transition ease-in-out duration-300`}>
+                                        {button.text}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
-
                     </div>
-                    
-                </div>
-
+                ))}
             </div>
 
-            <div className="text-center mt-20">
-                <p className="font-bold font-fira-code text-[15px]">{'{ return `you’ve reached the end!` };'}</p>
-                <button 
-                    onClick={scrollToTop} 
-                    className="group inline-block mt-3 mb-20"
-                >
-                    <div className='w-[55px] h-[55px] rounded-full border-2 border-[#343235] bg-[#FBFC94] flex items-center justify-center group-hover:bg-[#FEE24A] transition ease-in-out duration-300'>
+            <div className="text-center sm:mt-20 s:mt-16 xs:mt-14">
+                <p className="font-bold font-fira-code sm:text-sm s:text-xs xs:text-xxs">{'{ return `you’ve reached the end!` };'}</p>
+                <button onClick={scrollToTop} className="group inline-block mt-3 sm:mb-20 s:mb-16 xs:mb-14">
+                    <div className='sm:w-[55px] sm:h-[55px] s:w-[45px] s:h-[45px] xs:w-[35px] xs:h-[35px] rounded-full border-2 border-black bg-yellow group-hover:bg-yellow-hover transition ease-in-out duration-300 flex items-center justify-center'>
                         <img src={upArrow} alt="Scroll to top" className="w-4 h-4" />
                     </div>
                 </button>
             </div>
-
-            
         </>
-
-    )
+    );
 }

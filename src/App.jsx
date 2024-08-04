@@ -15,7 +15,7 @@ export default function App() {
     <div className='relative min-h-screen'>
       <TopGradient />
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center s:px-12 xs:p-10'>
         <div className='max-w-[590px] w-full space-y-20'>
 
           <Card />
