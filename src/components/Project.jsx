@@ -18,7 +18,7 @@ export default function Project() {
             title: "bizarrebeam's book corner",
             description: "A collection of books I have read, with my own summaries and highlights. This project is a practice in using Node.js, EJS templating, connecting to the Open Library API, and PostgreSQL.",
             buttons: [
-                { text: "GitHub", link: "#", bgColor: "bg-orange", hoverColor: "hover:bg-orange-hover" },
+                { text: "GitHub", link: "https://github.com/bizarrebeam/book-notes", bgColor: "bg-orange", hoverColor: "hover:bg-orange-hover" },
             ]
         }
     ];
@@ -39,13 +39,16 @@ export default function Project() {
 
                             <div className="flex justify-end sm:gap-4 s:gap-3 xs:gap-2 sm:mt-6 s:mt-5 xs:mt-4">
                                 {project.buttons.map((button, btnIndex) => (
-                                    <button
+                                    <a
                                         key={btnIndex}
-                                        className={`sm:px-4 sm:py-2 s:px-3 s:py-1 xs:px-2 xs:py-1 sm:border-2 s:border-1 xs:border border-black rounded-full ${button.bgColor} font-bold ${button.hoverColor} transform transition-transform duration-300 scale-100 hover:scale-105`}
+                                        href={button.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`sm:px-4 sm:py-2 s:px-3 s:py-1 xs:px-2 xs:py-1 sm:border-2 s:border-1 xs:border border-black rounded-full ${button.bgColor} font-bold ${button.hoverColor} transform transition-transform duration-300 scale-100 hover:scale-105 inline-flex items-center`}
                                     >
                                         {button.text}
                                         <img src={visitArrow} alt="Visit Arrow" className="inline-block ml-2 w-4 h-4" />
-                                    </button>
+                                    </a>
                                 ))}
                             </div>
                         </div>
