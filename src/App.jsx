@@ -1,5 +1,4 @@
 // import { useState } from 'react'
-
 import './App.css'
 import AboutMe from './components/AboutMe'
 import BottomGradient from './components/BottomGradient'

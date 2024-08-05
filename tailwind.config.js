@@ -39,12 +39,15 @@ export default {
         'xs': '340px'
       },
       fontSize: {
-        'xxs': '0.625rem' // 10px
+        'xxs': '0.625rem' 
       },
       lineHeight: {
         'sm': '1.75',
         's': '1.5',
         'xs': '1.25'
+      },
+      transitionProperty: {
+        'transform': 'transform',
       }
     },
   },
