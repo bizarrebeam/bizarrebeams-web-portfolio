@@ -20,7 +20,7 @@ export default function AboutMe() {
 
                 <div className="m-5 sm:mb-0 flex">
                     <a href="/AdelyaAmanda_CV.pdf" download className="flex justify-center">
-                        <button className="flex items-center px-4 py-2 bg-green-hover font-bold rounded-full border-black sm:border-2 s:border-1 xs:border transition-transform ease-in-out duration-300 transform hover:scale-110">
+                        <button className="flex items-center px-4 py-2 bg-green-hover font-bold rounded-full border-black sm:border-2 s:border-1 xs:border transition-transform ease-in-out duration-300 transform hover:scale-110 hover:bg-green">
                         <img src={download} alt="Download" className="w-4 h-4 mr-2" />
                         download my cv!
                         </button>

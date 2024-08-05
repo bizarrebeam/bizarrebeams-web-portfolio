@@ -2,7 +2,7 @@ import barcode from '../assets/barcode.png';
 
 export default function Stacks() {
     return (
-        <div className="w-full max-w-[588px] h-auto sm:p-8 s:p-6 xs:p-4 font-fira-code text-black sm:text-sm s:text-xs xs:text-xxs sm:rounded-3xl s:rounded-2xl xs:rounded-xl border-2 border-black bg-gradient-to-b from-white to-gray">
+        <div className="w-full max-w-[588px] h-auto sm:p-8 s:p-6 xs:p-4 font-fira-code text-black sm:text-sm s:text-xs xs:text-xxs sm:rounded-3xl s:rounded-2xl xs:rounded-xl sm:border-2 s:border-1 xs:border border-black bg-gradient-to-b from-white to-gray">
             <h1 className="sm:text-3xl s:text-2xl xs:text-xl font-bold text-center mt-3">{'< stacks i\'ve'}</h1>
             <h1 className="sm:text-3xl s:text-2xl xs:text-xl font-bold text-center sm:mb-6 s:mb-4 xs:mb-3">{'explored / >'}</h1>
             <div className="sm:border-t-2 sm:border-b-2 s:border-t-1 s:border-b-2 xs:border-t-0 xs:border-b-2 border-dashed border-black sm:my-3 sm:mb-8 s:my-2 s:mb-6 xs:my-1 xs:mb-4"></div>
