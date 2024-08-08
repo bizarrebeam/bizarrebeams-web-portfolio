@@ -15,7 +15,7 @@ export default function Project() {
             imgSrc: projectOne,
             altText: "Project",
             date: "july 2024",
-            title: "bizarrebeam's book corner",
+            title: "book-corner",
             description: "A collection of books I have read, with my own summaries and highlights. This project is a practice in using Node.js, EJS templating, connecting to the Open Library API, and PostgreSQL.",
             buttons: [
                 { text: "GitHub", link: "https://github.com/bizarrebeam/book-notes", bgColor: "bg-orange", hoverColor: "hover:bg-orange-hover" },
@@ -69,3 +69,4 @@ export default function Project() {
         </>
     );
 }
+

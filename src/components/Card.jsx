@@ -140,7 +140,7 @@ export default function Card() {
             rel="noopener noreferrer"
             className="group"
           >
-            <div className="xs:w-[35px] xs:h-[35px] s:w-[45px] s:h-[45px] sm:w-[55px] sm:h-[55px] rounded-full border-2 border-black bg-[#FBFC94] flex items-center justify-center group-hover:bg-[#FEE24A] transition-transform duration-300 ease-in-out transform group-hover:scale-110">
+            <div className="xs:w-[35px] xs:h-[35px] s:w-[45px] s:h-[45px] sm:w-[55px] sm:h-[55px] rounded-full border-2 border-black bg-yellow flex items-center justify-center group-hover:bg-yellow-hover transition-transform duration-300 ease-in-out transform group-hover:scale-110">
               <img src={link.imgSrc} alt={link.alt} className="w-4 h-4 s:w-6 s:h-6" />
             </div>
           </a>
