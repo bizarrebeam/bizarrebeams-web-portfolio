@@ -16,7 +16,7 @@ export default function Project() {
             altText: "Project",
             date: "july 2024",
             title: "book-notes",
-            description: "A collection of books I have read, with my own summaries and highlights. This project is a practice in using Express.js, EJS templating, connecting to the Open Library API, and PostgreSQL.",
+            description: "A collection of books I have read, with my own summaries and highlights. This project is a practice in using Express.js, EJS templating, TailwindCSS, connecting to the Open Library API, and PostgreSQL.",
             // if i deployed this project, i'd add another button here
             buttons: [
                 {
