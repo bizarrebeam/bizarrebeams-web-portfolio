@@ -29,6 +29,8 @@ export default function Project() {
         },
     ];
 
+    // currently have only one project and the component yet to handle
+    // multiple projects, so projects[0] is used here
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev + 1) % projects[0].slides.length);
     };
