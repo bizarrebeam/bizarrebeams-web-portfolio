@@ -11,11 +11,6 @@ export default function Experience() {
             date: 'March 2024 - Now',
         },
         {
-            title: 'Mentee of Pekan RISTEK Open Class Web Development SIG',
-            place: 'RISTEK Fasilkom UI',
-            date: 'November 2023',
-        },
-        {
             title: 'Frontend Intern at IT Development Department',
             place: 'BEM Fasilkom UI',
             date: 'September - December 2023',

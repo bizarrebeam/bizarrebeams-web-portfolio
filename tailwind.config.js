@@ -21,6 +21,7 @@ export default {
         gray: {
           DEFAULT: '#D9D9D9',
           text: '#898989',
+          background: '#F3F3F3',
         },
         orange: {
           DEFAULT: '#FFC593',
